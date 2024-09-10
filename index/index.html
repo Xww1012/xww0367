@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>xww-bulb</title>
+</head>
+<body>
+    <h3>点击灯泡可以实现打开或者关闭</h3>
+    <img id="myimage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+
+    <script>
+        function changeImage(){
+            // document.getElementById()
+            const element = document.getElementById("myimage");
+            console.log(element);
+            // let a = element.src.endsWith("pic_bulboff.gif");
+            // console.log(a);
+        //    let a = element.src.endsWith("pic_bulboff.gif")
+            if(element.src.endsWith("pic_bulboff.gif"))
+            {
+                element.src="pic_bulbon.gif";
+            }else
+            {
+                element.src="pic_bulboff.gif";
+            }
+            // console.log(element)
+            // alert("函数调用成功");
+            // confirm('函数是否调用成功')
+            // console.log(a);
+        }        
+    </script>
+</body>
+</html>
